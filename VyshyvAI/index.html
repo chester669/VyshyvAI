@@ -42,9 +42,16 @@
             <a class="header-item" href="#contacts">Контакти</a>
           </li>
         </ul>
-        <svg class="header-icon-profile" width="57" height="63">
-          <use class="header-profile" href="./images/icons.svg#profile"></use>
-        </svg>
+        <button class="header-button">
+          <svg
+            class="header-icon-profile"
+            data-modal-open
+            width="57"
+            height="63"
+          >
+            <use class="header-profile" href="./images/icons.svg#profile"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -72,9 +79,9 @@
             сервіс автоматично перетворить ваші слова у чарівний візерунок.
             Спробуйте зараз!
           </p>
-          <div class="backdrop-form-name">
+          <div class="create-place">
             <textarea
-              class="backdrop-user-info backdrop-comment"
+              class="create-place-text"
               placeholder="Напиши свою історію щоб ми могли згенерувати для тебе візерунок"
               name="comment"
               id="comment"
@@ -223,5 +230,36 @@
         </div>
       </div>
     </footer>
+    <!-- --------------------- backdrop-------------------- -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="backdrop-modal">
+        <div class="backdrop-general">
+          <button class="backdrop-button-close" data-modal-close type="button">
+            <svg class="backdrop-close-place" width="45" height="45">
+              <use
+                href="./images/icons.svg#close"
+                class="backdrop-icon-close"
+              ></use>
+            </svg>
+          </button>
+          <div class="backdrop-user-info">
+            <p class="backdrop-user-name">Привіт, Олександр</p>
+            <button class="backdrop-name-button">Змінити ім’я</button>
+            <a class="backdrop-user-mail" href="mailto:o_mslvsk@ukr.net"
+              >o_mslvsk@ukr.net</a
+            >
+            <button class="backdrop-mail-button">Змінити пароль</button>
+          </div>
+          <div class="backdrop-payment">
+            <p class="payment-text">Активна підписка</p>
+            <p class="payment-time">Термін дії</p>
+            <p class="payment-date">28.04.2024</p>
+            <button class="payment-cancel">Скасувати підписку</button>
+          </div>
+        </div>
+        <p class="backdrop-history">Історія генерацій</p>
+      </div>
+    </div>
+    <script src="./modal.js"></script>
   </body>
 </html>

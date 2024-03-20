@@ -3,7 +3,8 @@
     --font-size: 34px;
     --line-heigh: 1.20;
     --letter-specing: 0.48px;
-    --title-font: 50px
+    --title-font: 50px;
+    --hover-focus: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -83,6 +84,12 @@ img {
     height: 63px;
 }
 
+.header-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
 /* welcome */
 
 .welcome {
@@ -121,35 +128,6 @@ img {
     margin-bottom: 40px;
 }
 
-.backdrop-form-name {}
-
-
-.backdrop-user-info {
-    width: 1200px;
-    border-radius: 94px;
-    border: 1px solid rgba(46, 47, 66, 0.40);
-    padding: 22px 100px;
-    resize: none;
-    outline: none;
-    box-shadow: 0 0 30px 30px gray;
-}
-
-
-.backdrop-user-info {
-    height: 500px;
-    font-size: 30px;
-    letter-spacing: var(--letter-specing);
-    line-height: var(--line-heigh);
-}
-
-
-.backdrop-user-info::placeholder {
-    font-size: 20px;
-    color: #2E2E2E;
-    filter: none;
-    letter-spacing: var(--letter-specing);
-    line-height: var(--line-heigh);
-}
 
 .create-button {
     border-radius: 94px;
@@ -164,6 +142,33 @@ img {
     margin: auto;
     margin-top: 80px;
     cursor: pointer;
+}
+
+.create-place-text {
+    width: 1200px;
+    border-radius: 94px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    padding: 22px 100px;
+    resize: none;
+    outline: none;
+    box-shadow: 0 0 30px 30px gray;
+}
+
+
+.create-place-text {
+    height: 500px;
+    font-size: 30px;
+    letter-spacing: var(--letter-specing);
+    line-height: var(--line-heigh);
+}
+
+
+.create-place-text::placeholder {
+    font-size: 20px;
+    color: #2E2E2E;
+    filter: none;
+    letter-spacing: var(--letter-specing);
+    line-height: var(--line-heigh);
 }
 
 /*  services */
@@ -337,15 +342,6 @@ img {
     gap: 100px;
 }
 
-.container {}
-
-.footer-icons {}
-
-.footer-logo {}
-
-.header-icon-vector {}
-
-.header-vector {}
 
 .footer-social {
     margin-top: 74px;
@@ -362,9 +358,6 @@ img {
     fill: #FFFFFF;
 }
 
-.footer-about-us {}
-
-.footer-list-text {}
 
 .footer-text-item {
     font-size: 24px;
@@ -384,4 +377,158 @@ img {
     letter-spacing: var(--letter-specing);
     color: #414040;
 
+}
+
+/* backdrop */
+
+.backdrop {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    border-radius: 94px;
+    transition: opacity var(--hover-focus), visibility var(--hover-focus);
+}
+
+.backdrop-modal {
+    border-radius: 94px;
+    padding: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform var(--hover-focus);
+    width: 1200px;
+    min-height: 800px;
+    background: rgb(160, 63, 67);
+    background: linear-gradient(90deg, rgba(160, 63, 67, 1) 5%, rgba(132, 132, 132, 1) 100%, rgba(2, 0, 36, 1) 100%);
+}
+
+.backdrop-general {
+    display: flex;
+}
+
+.backdrop.is-hidden .backdrop-modal {
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.backdrop-button-close {
+    position: absolute;
+    top: 64px;
+    right: 64px;
+    background-color: transparent;
+    border: none;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color var(--hover-focus);
+}
+
+.backdrop-icon-close {
+    fill: #D9D9D9;
+}
+
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.backdrop-user-info {
+    margin-left: 25px;
+    margin-top: 50px;
+}
+
+.backdrop-user-name {
+    font-size: var(--title-font);
+    line-height: var(--line-heigh);
+    color: var(--main-text-color);
+    letter-spacing: var(--letter-specing);
+    margin-bottom: 20px;
+}
+
+.backdrop-name-button {
+    width: 250px;
+    border-radius: 94px;
+    background: #DF0000;
+    border: 1px solid red;
+    padding: 5px 25px;
+    color: #FFFFFF;
+    font-size: 21px;
+    display: block;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.backdrop-user-mail {
+    font-size: var(--font-size);
+    line-height: var(--line-heigh);
+    color: var(--main-text-color);
+    letter-spacing: var(--letter-specing);
+}
+
+.backdrop-mail-button {
+    width: 300px;
+    border-radius: 94px;
+    background: #DF0000;
+    border: 1px solid red;
+    padding: 5px 25px;
+    color: #FFFFFF;
+    font-size: 21px;
+    display: block;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.backdrop-payment {
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.payment-text {
+    font-size: var(--title-font);
+    color: var(--main-text-color);
+    line-height: var(--line-heigh);
+    letter-spacing: var(--letter-specing);
+    margin-bottom: 60px;
+}
+
+.payment-time {
+    font-size: 24px;
+    color: var(--main-text-color);
+    line-height: var(--line-heigh);
+    letter-spacing: var(--letter-specing);
+}
+
+.payment-date {
+    font-size: 24px;
+    color: var(--main-text-color);
+    line-height: var(--line-heigh);
+    letter-spacing: var(--letter-specing);
+}
+
+.payment-cancel {
+    width: 300px;
+    border-radius: 94px;
+    background: #DF0000;
+    border: 1px solid red;
+    padding: 5px 25px;
+    color: #FFFFFF;
+    font-size: 21px;
+    display: block;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.backdrop-history {
+
+    font-size: var(--font-size);
+    color: var(--main-text-color);
+    line-height: var(--line-heigh);
+    letter-spacing: var(--letter-specing);
+    margin-left: 25px;
+    margin-top: 100px;
 }
