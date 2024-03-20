@@ -25,13 +25,22 @@
     <header class="header">
       <div class="header-container container">
         <svg class="header-icon-vector" width="300" height="94">
-          <use class="header-vector" href="./images/icons.svg#vector"></use>
+          <use class="header-vector" href="./images/icons.svg#logo"></use>
         </svg>
+
         <ul class="header-list">
-          <li class="header-item">Хто ми?</li>
-          <li class="header-item">Послуги</li>
-          <li class="header-item">Галерея</li>
-          <li class="header-item">Контакти</li>
+          <li class="header-item">
+            <a class="header-item" href="#about-us">Хто ми?</a>
+          </li>
+          <li class="header-item">
+            <a class="header-item" href="#services">Послуги</a>
+          </li>
+          <li class="header-item">
+            <a class="header-item" href="#gallery">Галерея</a>
+          </li>
+          <li class="header-item">
+            <a class="header-item" href="#contacts">Контакти</a>
+          </li>
         </ul>
         <svg class="header-icon-profile" width="57" height="63">
           <use class="header-profile" href="./images/icons.svg#profile"></use>
@@ -43,7 +52,9 @@
       <section class="welcome">
         <div class="welcome-container container">
           <div class="welcome-text-container">
-            <h2 class="welcome-title">Ласкаво просимо до VyshyvAI!</h2>
+            <h2 class="welcome-title" id="about-us">
+              Ласкаво просимо до VyshyvAI!
+            </h2>
             <p class="welcome-text">
               Ми перетворимо ваш текст у чарівні візерунки для вишиванок. Просто
               введіть текст, оберіть стиль - і отримайте унікальний дизайн, який
@@ -75,7 +86,7 @@
       <!-- services -->
       <section class="services">
         <div class="services-container container">
-          <h2 class="service-title">Наші послуги</h2>
+          <h2 class="service-title" id="services">Наші послуги</h2>
           <ul class="service-list">
             <li class="services-card">
               <p class="services-card-text">Разова генерація</p>
@@ -114,7 +125,7 @@
       <section class="contacts">
         <div class="contacts-container container">
           <div class="text-container">
-            <h2 class="contacts-title">Є ідеї для співпраці?</h2>
+            <h2 class="contacts-title" id="contacts">Є ідеї для співпраці?</h2>
             <p class="contacts-text">
               Ми відкриті до нових можливостей та ідей співпраці. Напиши нам,
               якщо ти хочеш обговорити спільний проєкт чи маєш пропозиції щодо
@@ -128,16 +139,89 @@
       <!-- gallery -->
       <section class="gallery">
         <div class="gallery-container container">
-          <h2 class="gallery-title">Галерея візерунків</h2>
+          <h2 class="gallery-title" id="gallery">Галерея візерунків</h2>
           <p class="gallery-text">
             Тут ви знайдете найкращі та найбільш унікальні дизайни, створені за
             допомогою VyshyvAI. Кожен візерунок - це маленький шедевр, створений
             з любов'ю та увагою до деталей. Пориньте у світ нашої колекції,
             надихайтесь та насолоджуйтесь переглядом
           </p>
+
+          <button type="button" class="gallery-button">
+            СТВОРИТИ ВЛАСНИЙ ВІЗЕРУНОК
+          </button>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-container container">
+        <div class="footer-icons">
+          <svg class="header-icon-vector footer-logo" width="300" height="94">
+            <use class="header-vector" href="./images/icons.svg#logo"></use>
+          </svg>
+          <div class="footer-social">
+            <ul class="footer-social-list">
+              <li class="footer-social-item">
+                <svg class="footer-social" width="48" height="48">
+                  <use
+                    class="footer-icon"
+                    href="./images/icons.svg#facebook"
+                  ></use>
+                </svg>
+              </li>
+              <li class="footer-social-item">
+                <svg class="footer-social" width="48" height="48">
+                  <use class="footer-icon" href="./images/icons.svg#x"></use>
+                </svg>
+              </li>
+              <li class="footer-social-item">
+                <svg class="footer-social" width="48" height="48">
+                  <use
+                    class="footer-icon"
+                    href="./images/icons.svg#instagram"
+                  ></use>
+                </svg>
+              </li>
+              <li class="footer-social-item">
+                <svg class="footer-social" width="48" height="48">
+                  <use
+                    class="footer-icon"
+                    href="./images/icons.svg#linkedin"
+                  ></use>
+                </svg>
+              </li>
+              <li class="footer-social-item">
+                <svg class="footer-social" width="48" height="48">
+                  <use
+                    class="footer-icon"
+                    href="./images/icons.svg#tiktok"
+                  ></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-about-us">
+          <ul class="footer-list-text">
+            <li class="footer-text-item">
+              <a href="#about-us" class="footer-text-item">Про нас</a>
+            </li>
+            <li class="footer-text-item">
+              <a href="#services" class="footer-text-item">Наші послуги</a>
+            </li>
+            <li class="footer-text-item">
+              <a href="#gallery" class="footer-text-item">Галерея</a>
+            </li>
+            <li class="footer-text-item">
+              <a href="#contacts" class="footer-text-item">Контакти</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-rights">
+          <p class="footer-rights-text">© 2024 VyshyvAI. Усі права захищені.</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
