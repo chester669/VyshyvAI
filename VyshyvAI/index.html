@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/ico/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/ico/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/ico/favicon-16x16.png" />
+    <link rel="manifest" href="./images/ico/site.webmanifest" />
+    <link rel="mask-icon" href="./images/ico/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -43,12 +50,7 @@
           </li>
         </ul>
         <button class="header-button">
-          <svg
-            class="header-icon-profile"
-            data-modal-open
-            width="57"
-            height="63"
-          >
+          <svg class="header-icon-profile" data-modal-open width="57" height="63">
             <use class="header-profile" href="./images/icons.svg#profile"></use>
           </svg>
         </button>
@@ -59,25 +61,24 @@
       <section class="welcome">
         <div class="welcome-container container">
           <div class="welcome-text-container">
-            <h2 class="welcome-title" id="about-us">
-              Ласкаво просимо до VyshyvAI!
-            </h2>
+            <h2 class="welcome-title" id="about-us">Ласкаво просимо до VyshyvAI!</h2>
             <p class="welcome-text">
-              Ми перетворимо ваш текст у чарівні візерунки для вишиванок. Просто
-              введіть текст, оберіть стиль - і отримайте унікальний дизайн, який
-              вражатиме вашіх друзів. Долучайтесь до нас та створіть свій
-              власний шедевр вишивки!
+              Ми перетворимо ваш текст у чарівні візерунки для вишиванок. Просто введіть текст,
+              оберіть стиль - і отримайте унікальний дизайн, який вражатиме вашіх друзів.
+              Долучайтесь до нас та створіть свій власний шедевр вишивки!
             </p>
           </div>
         </div>
+        <figure class="intro-image">
+          <img width="1400" height="1231" alt="VyshyvAI пташка" src="./images/intro_img.svg" />
+        </figure>
       </section>
       <!-- create -->
       <section class="create">
         <div class="create-container container">
           <p class="create-text">
-            Просто введіть текст у поле нижче та оберіть стиль вишиванки. Наш
-            сервіс автоматично перетворить ваші слова у чарівний візерунок.
-            Спробуйте зараз!
+            Просто введіть текст у поле нижче та оберіть стиль вишиванки. Наш сервіс автоматично
+            перетворить ваші слова у чарівний візерунок. Спробуйте зараз!
           </p>
           <div class="create-place">
             <textarea
@@ -92,15 +93,17 @@
       </section>
       <!-- services -->
       <section class="services">
+        <figure class="price-image">
+          <img width="1141" height="1482" alt="VyshyvAI пташка" src="./images/prices_img.svg" />
+        </figure>
+
         <div class="services-container container">
           <h2 class="service-title" id="services">Наші послуги</h2>
           <ul class="service-list">
             <li class="services-card">
               <p class="services-card-text">Разова генерація</p>
               <p class="services-card-money">1$</p>
-              <p class="services-text">
-                Закодуй свої сенси в унікальний орнамент
-              </p>
+              <p class="services-text">Закодуй свої сенси в унікальний орнамент</p>
             </li>
             <li class="services-card">
               <p class="services-card-text">5 генерацій</p>
@@ -110,9 +113,7 @@
             <li class="services-card">
               <p class="services-card-text">Підписка на місяць</p>
               <p class="services-card-money">12$</p>
-              <p class="services-text">
-                Необмежена кількість твоїх сенсів протягом місяця
-              </p>
+              <p class="services-text">Необмежена кількість твоїх сенсів протягом місяця</p>
             </li>
           </ul>
           <ul class="services-button-list">
@@ -130,13 +131,20 @@
       </section>
       <!-- contacts -->
       <section class="contacts">
+        <figure class="contacts-image">
+          <img
+            width="1440"
+            height="1482"
+            alt="VyshyvAI пташка"
+            src="./images/cooperating_img.svg"
+          />
+        </figure>
         <div class="contacts-container container">
           <div class="text-container">
             <h2 class="contacts-title" id="contacts">Є ідеї для співпраці?</h2>
             <p class="contacts-text">
-              Ми відкриті до нових можливостей та ідей співпраці. Напиши нам,
-              якщо ти хочеш обговорити спільний проєкт чи маєш пропозиції щодо
-              співпраці.
+              Ми відкриті до нових можливостей та ідей співпраці. Напиши нам, якщо ти хочеш
+              обговорити спільний проєкт чи маєш пропозиції щодо співпраці.
             </p>
             <button type="button" class="contacts-button">КОНТАКТИ</button>
           </div>
@@ -148,15 +156,12 @@
         <div class="gallery-container container">
           <h2 class="gallery-title" id="gallery">Галерея візерунків</h2>
           <p class="gallery-text">
-            Тут ви знайдете найкращі та найбільш унікальні дизайни, створені за
-            допомогою VyshyvAI. Кожен візерунок - це маленький шедевр, створений
-            з любов'ю та увагою до деталей. Пориньте у світ нашої колекції,
-            надихайтесь та насолоджуйтесь переглядом
+            Тут ви знайдете найкращі та найбільш унікальні дизайни, створені за допомогою VyshyvAI.
+            Кожен візерунок - це маленький шедевр, створений з любов'ю та увагою до деталей.
+            Пориньте у світ нашої колекції, надихайтесь та насолоджуйтесь переглядом
           </p>
 
-          <button type="button" class="gallery-button">
-            СТВОРИТИ ВЛАСНИЙ ВІЗЕРУНОК
-          </button>
+          <button type="button" class="gallery-button">СТВОРИТИ ВЛАСНИЙ ВІЗЕРУНОК</button>
         </div>
       </section>
     </main>
@@ -171,10 +176,7 @@
             <ul class="footer-social-list">
               <li class="footer-social-item">
                 <svg class="footer-social" width="48" height="48">
-                  <use
-                    class="footer-icon"
-                    href="./images/icons.svg#facebook"
-                  ></use>
+                  <use class="footer-icon" href="./images/icons.svg#facebook"></use>
                 </svg>
               </li>
               <li class="footer-social-item">
@@ -184,26 +186,17 @@
               </li>
               <li class="footer-social-item">
                 <svg class="footer-social" width="48" height="48">
-                  <use
-                    class="footer-icon"
-                    href="./images/icons.svg#instagram"
-                  ></use>
+                  <use class="footer-icon" href="./images/icons.svg#instagram"></use>
                 </svg>
               </li>
               <li class="footer-social-item">
                 <svg class="footer-social" width="48" height="48">
-                  <use
-                    class="footer-icon"
-                    href="./images/icons.svg#linkedin"
-                  ></use>
+                  <use class="footer-icon" href="./images/icons.svg#linkedin"></use>
                 </svg>
               </li>
               <li class="footer-social-item">
                 <svg class="footer-social" width="48" height="48">
-                  <use
-                    class="footer-icon"
-                    href="./images/icons.svg#tiktok"
-                  ></use>
+                  <use class="footer-icon" href="./images/icons.svg#tiktok"></use>
                 </svg>
               </li>
             </ul>
@@ -236,18 +229,13 @@
         <div class="backdrop-general">
           <button class="backdrop-button-close" data-modal-close type="button">
             <svg class="backdrop-close-place" width="45" height="45">
-              <use
-                href="./images/icons.svg#close"
-                class="backdrop-icon-close"
-              ></use>
+              <use href="./images/icons.svg#close" class="backdrop-icon-close"></use>
             </svg>
           </button>
           <div class="backdrop-user-info">
             <p class="backdrop-user-name">Привіт, Олександр</p>
             <button class="backdrop-name-button">Змінити ім’я</button>
-            <a class="backdrop-user-mail" href="mailto:o_mslvsk@ukr.net"
-              >o_mslvsk@ukr.net</a
-            >
+            <a class="backdrop-user-mail" href="mailto:o_mslvsk@ukr.net">o_mslvsk@ukr.net</a>
             <button class="backdrop-mail-button">Змінити пароль</button>
           </div>
           <div class="backdrop-payment">
