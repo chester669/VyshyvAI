@@ -378,7 +378,11 @@ section {
   line-height: var(--line-heigh);
   letter-spacing: var(--letter-specing);
   color: var(--main-text-color);
-  margin-bottom: 50px;
+}
+.footer-list-text {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 .footer-rights {
